@@ -213,4 +213,43 @@
         },
     });
 
+    var swiper = new Swiper(".banner-nav-active", {
+		loop: true,
+		spaceBetween: 10,
+        slidesPerView: 3,
+		freeMode: true,
+		watchSlidesProgress: true,
+		allowTouchMove: true,
+		allowSlideNext: true,
+		allowSlidePrev: true,
+		observer:true,
+		observeParents:true,
+		freeMode: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+        centeredSlides: true,
+		});
+		var swiper2 = new Swiper(".banner_more_item", {
+		loop: true,
+		spaceBetween: 0,
+		allowTouchMove: true,
+		allowSlideNext: true,
+		allowSlidePrev: true,
+		observer:true,
+		observeParents:true,
+		freeMode: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: ".product-details__button-next",
+			prevEl: ".product-details__button-prev",
+		},
+		thumbs: {
+			swiper: swiper,
+		},
+	});
+
+    
+	
+
 })(jQuery);

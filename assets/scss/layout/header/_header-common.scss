@@ -10,8 +10,14 @@
 		justify-content: space-between;
 		position: relative;
 		z-index: 55;
+		padding-left: 60px;
+		@media #{$x3l,$xxl,$xl} {
+			padding-left: 30px;
+		}
+		@media #{$xs,$sm,$md} {
+			padding-left: 20px;
+		}
 	}
-
 	&-menu {
 		text-align: center;
 		ul {

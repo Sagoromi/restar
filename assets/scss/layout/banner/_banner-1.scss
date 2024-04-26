@@ -4,16 +4,12 @@
 /*----------------------------------------*/
 
 // Banner style
-.banner-active {
-	background-color: #F4EFE3;
-    z-index: 5;
-}
 .banner_more_item {
     padding: 70px 145px 45px 85px;
 }
 .banner-style-one {
 	padding: 100px 100px 100px 100px;
-    background: #111;
+	background: var(--bd-heading);
 	.banner-inner {
 		.inner-shapes {
 			.shape-one {
@@ -48,7 +44,7 @@
 		height: 100%;
 		width: 100%;
 		right: 0;
-		z-index: 5;
+		z-index: -1;
 	}
 	.banner-content {
 		text-align: center;
@@ -97,15 +93,15 @@
 		right: 0;
 		z-index: -1;
 	}
-	.shape-two {
-		height: 100%;
-		width: 50%;
-		background: #272727;
-		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: -1;
-	}
+	// .shape-two {
+	// 	height: 100%;
+	// 	width: 41.4%;
+	// 	background: #272727;
+	// 	position: absolute;
+	// 	top: 0;
+	// 	right: 0;
+	// 	z-index: -1;
+	// }
 }
 .banner-one-navigation {
 	.banner-pagination {
@@ -166,6 +162,7 @@
             flex-direction: column;
             gap: 20px 0;
             li {
+				list-style: none;
                 a {
                     color: var(--bd-primary);
                 }
@@ -202,4 +199,25 @@
 		color: var(--bd-primary);
 		flex: none;
 	}
+}
+.banner-nav-active{
+	width: 212px;
+}
+.banner-nav-image {
+	width: 60px;
+	min-width: 60px;
+}
+.swiper-slide-active {
+	.banner-nav-image {
+		position: relative;
+		&:before {
+			position: absolute;
+			content: "";
+			height: 100%;
+			width: 100%;
+			border: 3px solid var(--bd-primary);
+			border-radius: 50%;
+		}
+	}
+	
 }

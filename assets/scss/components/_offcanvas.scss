@@ -7,7 +7,7 @@
 // Offcanvas style
 .offcanvas{
     &-area {
-        background: #F0F6F8 none repeat scroll 0 0;
+        background: #0C0C0C none repeat scroll 0 0;
         position: fixed;
         right: 0;
         top: 0;
@@ -19,7 +19,7 @@
         overflow-y: scroll;
         overscroll-behavior-y: contain;
         scrollbar-width: none;
-        border-inline-start: 1px solid var(--bd-border-primary);
+        border-inline-start: 1px solid hsl(0, 0%, 8.6%);
         ::-webkit-scrollbar {
             display: none;
         }
@@ -51,7 +51,7 @@
     }
     &-top{
         padding-bottom: 20px;
-        border-bottom: 1px solid var(--bd-border-primary);;
+        border-bottom: 1px solid hsl(0, 0%, 8.6%);
     }
     &-search{
         position: relative;
@@ -239,6 +239,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    @media #{$xs,$sm} {
+        width: 70px;
+  height: 70px;
+    }
 }
 .offcanvas-slider-content {
 	border: 1px solid var(--bd-border-primary);
@@ -307,7 +311,7 @@
 		inset-inline-start: 0;
 		height: 2px;
 		width: 100%;
-		background-color: currentColor;
+        background-color: #fff;
 		transition: top 0.15s ease, transform 0.3s ease;
 		&.line--1 {
 			top: 0;

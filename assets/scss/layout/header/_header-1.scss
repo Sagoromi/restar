@@ -13,17 +13,28 @@
     height: 100%;
     display: inline-flex;
     align-items: center;
+    &:before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 315px;
+        background: #C59D5F;
+        z-index: -1;
+        left: 0;
+        @media #{$x3l} {
+            width: 220px;
+        }
+        @media #{$xxl,$xl} {
+            width: 175px;
+        }
+        @media #{$sm,$md} {
+            width: 210px;
+        }
+        @media #{$xs} {
+            width: 165px;
+        }
+    }
 }
-.header-logo:before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 315px;
-    background: #C59D5F;
-    z-index: -1;
-    left: 0;
-}
-
 .header-search {
     position: relative;
     button {
