@@ -233,7 +233,12 @@
     }
 }
 .sidebar-toggle {
-	cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background-color: var(--bd-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .offcanvas-slider-content {
 	border: 1px solid var(--bd-border-primary);

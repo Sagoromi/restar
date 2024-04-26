@@ -5,7 +5,9 @@
 /*----------------------------------------*/
 .category-item {
     &.style-one {
-        text-align: center;
+      position: relative;
+      z-index: 5;
+      text-align: center;
         .content {
             position: relative;
             &::before {
@@ -16,7 +18,7 @@
                 width: 112px;
                 height: 21px;
                 filter: blur(18px);
-                top: 46px;
+                top: 45px;
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -24,11 +26,16 @@
             background: var(--bd-white);
             border-radius: 30px;
             position: relative;
-            top: -56px;
+            margin-top: -56px;
             z-index: -1;
             .title {
                 font-size: 22px;
                 text-transform: capitalize;
+                a {
+                  &:hover {
+                    color: var(--bd-primary);
+                  }
+                }
             }
         }
     }
@@ -38,26 +45,25 @@
     position: absolute !important;
     top: 50%;
     transform: translateY(-50%);
-    left: 0;
+    left: -125px;
     z-index: 55;
 
 }
 .category-navigation {
     .category-slider-button-next {
         left: auto;
-        right: 0;
+        right: -125px;
     }
 }
 
 
-
+// Navigation button
 .prev-slide,
 .next-slide {
   position: relative;
   width: 30px;
   height: 40px;
   font-size: 0;
-
   & span {
     display: inline-block;
     position: absolute;
@@ -65,10 +71,9 @@
     transform: translateY(-50%);
     width: 26px;
     height: 1.8px;
-    background: #8A8A8D;
+    background: var(--bd-heading);
     font-size: 0;
     transition: all 0.25s;
-
     &:before {
       content: "";
       position: absolute;
@@ -81,19 +86,16 @@
       transition: transform 0.25s;
     }
   }
-
   & svg {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 14px;
   }
-
   & path {
-    fill: #8A8A8D;
+    fill: var(--bd-heading);
     transition: fill 0.25s;
   }
-
   &:hover {
     & span {
       width: 40px;
@@ -109,17 +111,12 @@
     }
   }
 }
-
 .prev-slide {
-  margin-right: 27px;
-
   & span {
     right: 0;
-
     & svg {
       left: 0;
     }
-
     &:before {
       left: -13px;
     }
