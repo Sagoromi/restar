@@ -1,0 +1,46 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  4.4 mission css
+/*----------------------------------------*/
+.mission-video {
+    position: relative;
+    .play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color: var(--bd-white);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-weight: var(--bd-fw-medium);
+    }
+}
+.mission-grid {
+    display: grid;
+    grid-template-columns: 32% 37% 200px;
+    justify-content: space-between;
+    gap: 50px 50px;
+    .content {
+        .description {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }    
+}
+.mission-brand {
+	.item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+		.thumb {
+			padding: 20px 20px;
+			border: 1px solid #ddd;
+			text-align: center;
+		}
+	}
+}

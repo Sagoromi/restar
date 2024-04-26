@@ -1,0 +1,73 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.5.1 Header Style 1
+/*----------------------------------------*/
+.header-right.style-one {
+    display: flex;
+    align-items: center;
+	gap: 15px;
+}
+.header-style-one {
+	.bar-icon span {
+		background: var(--bd-white);
+	}
+}
+.header-style-two {
+	.header-currency-item > span {
+		color: var(--bd-heading);
+		&:hover {
+			color: var(--bd-white);
+		}
+	}
+	.header-btn-wrap {
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 1399px) {
+			display: none;
+		}
+	}
+}
+.sidebar-toggle {
+	button {
+		width: 80px;
+		height: 80px;
+		display: inline-flex;
+		justify-content: center;
+		background-color: var(--bd-heading);
+		align-items: center;
+		@media #{$xs,$sm} {
+			width: 70px;
+  			height: 70px;
+		}
+	}
+}
+.header-style-one {
+	.header-inner {
+		padding-left: 30px;
+	}
+}
+.header-right.style-one {
+	.header-action {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+}
+
+.header-logo {
+    max-width: 162px;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+.header-logo:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 315px;
+    background: #C59D5F;
+    z-index: -1;
+    left: 0;
+}

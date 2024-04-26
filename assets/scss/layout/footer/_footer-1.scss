@@ -1,0 +1,88 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.4.1 Footer Style 1
+/*----------------------------------------*/
+
+// Footer Widget 1
+.footer-intro-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media #{$xs} {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .btn-wrap {
+        width: max-content;
+        .bd-input-btn {
+            background-color: var(--bd-primary);
+            color: var(--bd-white);
+        }
+    }
+	.content {
+        .title {
+            color: var(--bd-white);
+            font-weight: var(--bd-fw-medium);
+            @media #{$xl} {
+                font-size: 34px;
+            }
+            @media #{$lg} {
+                font-size: 28px;
+            }
+            @media #{$xs,$sm,$md} {
+                font-size: 20px;
+            }
+        }
+    }
+}
+.footer-intro {
+    padding-bottom: 80px;
+    border-bottom: 1px solid #3F3F3F;
+}
+.footer-middle {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    @media #{$xs,$sm} {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+}
+.footer-info-single-item {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 40px auto;
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .icon {
+    font-size: 24px;
+    color: rgba(102, 102, 102, 1);
+    }
+    .title {
+        a {
+            font-size: 16px;
+            color: var(--bd-white);
+            &:hover {
+                color: var(--bd-primary);
+            }
+        }
+    }
+}
+.footer-info-list-items {
+    margin-bottom: 30px;
+}
+.footer-info-wrapper {
+    .bd-social {
+        ul {
+            li {
+                a {
+                    color: var(--bd-white);
+                    &:hover {
+                        color: var(--bd-primary);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use "../../utils" as *;
+
+/*----------------------------------------*/
+/*  4.12 food banner css
+/*----------------------------------------*/
+.food-banner-item {
+    min-height: 350px;
+    padding: 80px 40px 75px;
+    position: relative;
+    .info-title {
+        color: var(--bd-primary);
+        font-size: 30px;
+    }
+    .title {
+        color: var(--bd-white);
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .offer-title {
+        color: var(--bd-primary);
+    }
+    .btn-inner {
+        margin-top: 40px;
+        .bd-primary-btn {
+            height: 46px;
+        }
+    }
+    .thumb {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .discount-shapes {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+}

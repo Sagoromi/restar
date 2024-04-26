@@ -1,0 +1,74 @@
+@use "../../utils" as *;
+
+/*----------------------------------------*/
+/*  4.5 Contact css
+/*----------------------------------------*/
+.contact-wrapper {
+  &.style-one {
+    margin-left: 70px;
+    @media #{$xs,$sm,$md} {
+      margin-left: 0;
+    }
+    @media #{$lg,$xl} {
+      margin-left: 30px;
+    }
+  }
+}
+.contact-info {
+	background: var(--bd-black);
+	padding: 35px 40px 40px;
+  @media #{$xxs} {
+    padding: 35px 30px 40px;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #3F3F3F;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    .content {
+      .title {
+        font-size: 24px;
+        color: var(--bd-white);
+        font-weight: var(--bd-fw-regular);
+        margin-bottom: 10px;
+        @media #{$xs} {
+          font-size: 20px;
+        }
+      }
+      .info {
+        color: #B2B2B2;
+        a {
+          &:hover {
+            color: var(--bd-primary);
+          }
+        }
+      }
+    }
+    .icon {
+      span {
+        color: #666666;
+        font-size: 24px;
+      }
+    }
+  }
+}
+.contact-info-social {
+  margin-top: 40px;
+	ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+		li {
+			a {
+				width: 40px;
+				height: 40px;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				border: 1px solid #3F3F3F;
+				color: var(--bd-white);
+			}
+		}
+	}
+}

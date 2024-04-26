@@ -1,0 +1,62 @@
+@use "../../utils" as *;
+/*----------------------------------------*/
+/*  Daily update
+/*----------------------------------------*/
+.daily-update-thumb-wrpper {
+    margin-right: 100px;
+    position: relative;
+    @media #{$xs,$sm,$md} {
+        margin-right: 0px;
+    }
+    @media #{$lg} {
+        margin-right: 65px;
+    } 
+    .dot {
+        position: absolute;
+        top: -60px;
+        left: -60px;
+        z-index: -1;
+    }
+    .ragtangle {
+        background: #f0f6f8;
+        height: 368px;
+        width: 357px;
+        position: absolute;
+        bottom: -40px;
+        right: -40px;
+        z-index: -1;
+    }
+}
+.daily-update-content {
+    .content {
+        .description {
+            margin-bottom: 45px;
+        }
+    }
+}
+.bd-common-form-wrapper{
+    .more-info {
+        margin-top: 15px;
+        a {
+            color: var(--bd-heaing);
+            font-weight: var(--bd-fw-medium);
+            text-decoration: underline;
+            &:hover {
+                color: var(--bd-primary);
+            }
+        }
+    }
+}
+.bd-common-form {
+    position: relative;
+    input {
+        height: 70px;
+        padding-right: 170px;
+    }
+    .bd-btn {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
