@@ -39,23 +39,6 @@
 .header-quick-action {
 	display: flex;
 	align-items: center;
-}
-.header-contact {
-    .title-inner {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    .content {
-        .title {
-            font-size: 22px;
-            color: #fff;
-        }
-        .description {
-            color: #8E97A6;
-            font-size: 14px;
-        }
-    }
     .action-btn {
         position: relative;
         display: inline-flex;
@@ -92,5 +75,21 @@
         margin-right: 30px;
         display: inline-block;
     }
-    
+}
+.header-contact {
+    .title-inner {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .content {
+        .title {
+            font-size: 22px;
+            color: #fff;
+        }
+        .description {
+            color: #8E97A6;
+            font-size: 14px;
+        }
+    }
 }

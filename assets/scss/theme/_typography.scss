@@ -111,7 +111,7 @@ h1,
 h2,
 .h2 {
 	font-size: clamp(28px, 3vw, 48px);
-	line-height: 1.18;
+	line-height: 1.1;
 	@media #{$lg} {
 		font-size: 36px;
 	}
